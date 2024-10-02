@@ -1,0 +1,49 @@
+Entities: Enclosure, Animals, Species, Zookeeper, Compatibility Table (May be more adding to later)
+
+ 
+
+Attributes and Keys:	 
+
+Enclosure: 
+
+  Enclosure Unique Number (Primary) 
+  Habitat Type  
+  Size  
+  Main Feature  
+  Maximum Animal Count 
+
+Animal: 
+
+  Animal ID (Primary) 
+  Current Enclosure Number (Foreign) 
+  Species (Foreign) 
+  Name 
+  Date of Birth 
+  Diet 
+  Description 
+  Notes of Animal (Foreign) 
+  Date of Notes of Animal (Foreign) 
+  Animal Start Date 
+  Animal End Date 
+
+Species: 
+
+  Species Name (Unique) 
+  Description 
+  Habitat Type 
+  Animal Species Limiter   // - If too many of the same type 
+
+Zookeeper: 
+
+  Unique ID (Primary) 
+  Name 
+  Notes of Animal  
+  Date of Note 
+
+Compatibility Table: 
+
+  Species A} -- Composite Key 
+  Species B} -- Composite Key 
+  Compatibility Rating 
+
+	 

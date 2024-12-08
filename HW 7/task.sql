@@ -3,10 +3,17 @@
 -- 1
 
 CREATE VIEW samsBills AS
-SELECT first_name, surname, bill_date, cust_name, bill_total
-FROM restBill B
-JOIN restStaff S ON B.waiter_no = S.staff_no
-WHERE first_name = "Sam" AND surname = "Pitt";
+SELECT 
+    s.first_name, 
+    s.surname, 
+    b.bill_date, 
+    b.cust_name, 
+    b.bill_total
+FROM restBill b
+JOIN restStaff s ON b.waiter_no = s.staff_no
+WHERE s.first_name = 'Sam' AND s.surname = 'Pitt';
+
+SELECT * FROM samsBills;
 
 -- 2 
 
